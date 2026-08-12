@@ -1,23 +1,22 @@
-# @seneca/refer
+![Seneca](http://senecajs.org/files/assets/seneca-logo.png)
+> A [Seneca.js](http://senecajs.org) plugin
 
-> _Seneca Refer_ is a plugin for [Seneca](http://senecajs.org)
+# @seneca/doc-spider
 
-    User referral business logic plugin for the Seneca platform.
-
-[![npm version](https://img.shields.io/npm/v/@seneca/refer.svg)](https://npmjs.com/package/@seneca/refer)
-[![build](https://github.com/senecajs/seneca-refer/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-refer/actions/workflows/build.yml)
-[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-refer/badge.svg?branch=main)](https://coveralls.io/github/senecajs/seneca-refer?branch=main)
-[![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-refer/badge.svg)](https://snyk.io/test/github/senecajs/seneca-refer)
-[![DeepScan grade](https://deepscan.io/api/teams/5016/projects/20872/branches/581541/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=5016&pid=20872&bid=581541)
-[![Maintainability](https://api.codeclimate.com/v1/badges/8242b80adb8acb685afd/maintainability)](https://codeclimate.com/github/senecajs/seneca-refer/maintainability)
+[![npm version](https://img.shields.io/npm/v/@seneca/file-spider.svg)](https://npmjs.com/package/@seneca/file-spider)
+[![build](https://github.com/senecajs/seneca-file-spider/actions/workflows/build.yml/badge.svg)](https://github.com/senecajs/seneca-file-spider/actions/workflows/build.yml)
+[![Coverage Status](https://coveralls.io/repos/github/senecajs/seneca-file-spider/badge.svg?branch=main)](https://coveralls.io/github/senecajs/seneca-file-spider?branch=main)
+[![Known Vulnerabilities](https://snyk.io/test/github/senecajs/seneca-file-spider/badge.svg)](https://snyk.io/test/github/senecajs/seneca-file-spider)
 
 | ![Voxgig](https://www.voxgig.com/res/img/vgt01r.png) | This open source module is sponsored and supported by [Voxgig](https://www.voxgig.com). |
-| ---------------------------------------------------- | --------------------------------------------------------------------------------------- |
+|---|---|
+
+Document spider plugin for the Seneca platform.
 
 ## Install
 
 ```sh
-$ npm install @seneca/refer
+$ npm install @seneca/file-spider
 ```
 
 ## Quick Example
@@ -25,117 +24,121 @@ $ npm install @seneca/refer
 ```js
 // Setup - get the key value (<SECRET>) separately from a vault or
 // environment variable.
-Seneca().use('refer', {})
+Seneca().use('file-spider', {})
 
 TODO
 ```
 
-<!--START:options-->
+## More Examples
 
-## Options
+See [test/](test/) for more usage examples.
+
+## Motivation
+
+A [Seneca.js](http://senecajs.org) plugin.
+
+## Support
+
+If you're using this module and need help, you can:
+
+- Post a [github issue](https://github.com/senecajs/seneca-doc-spider/issues)
+- Tweet to [@senecajs](http://twitter.com/senecajs)
+- Ask on the [Gitter](https://gitter.im/senecajs/seneca)
+
+## API
+
+### Options
 
 _None._
 
-<!--END:options-->
+### Action Patterns
 
-<!--START:action-list-->
+* [accept:entry,biz:file-spider](#-acceptentrybizrefer-)
+* [biz:file-spider,create:entry](#-bizrefercreateentry-)
+* [biz:file-spider,ensure:entry](#-bizreferensureentry-)
+* [biz:file-spider,give:award](#-bizrefergiveaward-)
+* [biz:file-spider,load:entry](#-bizreferloadentry-)
+* [biz:file-spider,load:rules](#-bizreferloadrules-)
+* [biz:file-spider,lost:entry](#-bizreferlostentry-)
+* [biz:file-spider,update:occur](#-bizreferupdateoccur-)
+* [biz:file-spider,update:entry](#-bizreferupdateentry-)
 
+### Action Descriptions
 
-## Action Patterns
-
-* [accept:entry,biz:refer](#-acceptentrybizrefer-)
-* [biz:refer,create:entry](#-bizrefercreateentry-)
-* [biz:refer,ensure:entry](#-bizreferensureentry-)
-* [biz:refer,give:award](#-bizrefergiveaward-)
-* [biz:refer,load:entry](#-bizreferloadentry-)
-* [biz:refer,load:rules](#-bizreferloadrules-)
-* [biz:refer,lost:entry](#-bizreferlostentry-)
-* [biz:refer,update:occur](#-bizreferupdateoccur-)
-* [biz:refer,update:entry](#-bizreferupdateentry-)
-
-
-<!--END:action-list-->
-
-<!--START:action-desc-->
-
-
-## Action Descriptions
-
-### &laquo; `accept:entry,biz:refer` &raquo;
+### &laquo; `accept:entry,biz:file-spider` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,create:entry` &raquo;
+### &laquo; `biz:file-spider,create:entry` &raquo;
 
 Create referral entry.
 
 
 
 ----------
-### &laquo; `biz:refer,ensure:entry` &raquo;
+### &laquo; `biz:file-spider,ensure:entry` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,give:award` &raquo;
+### &laquo; `biz:file-spider,give:award` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,load:entry` &raquo;
+### &laquo; `biz:file-spider,load:entry` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,load:rules` &raquo;
+### &laquo; `biz:file-spider,load:rules` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,lost:entry` &raquo;
+### &laquo; `biz:file-spider,lost:entry` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,update:occur` &raquo;
+### &laquo; `biz:file-spider,update:occur` &raquo;
 
 No description provided.
 
 
 
 ----------
-### &laquo; `biz:refer,update:entry` &raquo;
+### &laquo; `biz:file-spider,update:entry` &raquo;
 
 No description provided.
 
 
 
 ----------
-
-
-<!--END:action-desc-->
-
-## More Examples
-
-## Motivation
-
-## Support
-
-## API
 
 ## Contributing
 
+The [Senecajs org](https://github.com/senecajs/) encourages open participation. If you feel you can help in any way, be it with documentation, examples, extra testing, or new features please get in touch.
+
+### Running tests
+
+```sh
+npm run test
+```
+
 ## Background
+
+Part of the [Senecajs org](https://github.com/senecajs/).
