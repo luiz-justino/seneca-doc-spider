@@ -1,5 +1,5 @@
 {
-  "name": "@seneca/file-spider",
+  "name": "@seneca/doc-spider",
   "version": "0.0.1",
   "main": "dist/file-spider.js",
   "type": "commonjs",
@@ -10,7 +10,7 @@
     "seneca",
     "file-spider"
   ],
-  "author": "Ríona Stokes - https://github.com/rionastokes",
+  "author": "R\u00edona Stokes - https://github.com/rionastokes",
   "repository": {
     "type": "git",
     "url": "git://github.com/senecajs/seneca-file-spider.git"
